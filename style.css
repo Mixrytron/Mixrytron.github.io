@@ -1,16 +1,47 @@
 body {
     background-color: black;
+    margin: 0;
 }
 
-.cloud-container {
-    position: relative;
-    width: 100%;
+.welcome {
+    height: 100vh;
+    background-image: url("welcomeBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.container {
+    padding: 10px;
+    height: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    width: 200px;
     height: 200px;
-    overflow: hidden;
+    size: contain;
+    border-radius: 20%;
+    margin-bottom: 20px;
+    border: 5px solid whitesmoke;
 }
-  
-.circle {
-    position: absolute;
-    background: white;
-    border-radius: 50%;
+
+.intro-text {
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    text-align: left;
+    font-size: 18px;
+    color: lightgrey;
 }
+
+
+
+
+
+
+
