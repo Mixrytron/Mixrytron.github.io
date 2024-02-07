@@ -1,15 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Poppins:wght@700&family=Raleway:wght@500&display=swap');
+
+:root {
+    --base: #011826;
+    --secondary: #012840;
+    --accent: #EBF0F2;
+    --accent2: #74838C;
+}
+
 body {
-    background-color: black;
+    background-color: var(--base);
     margin: 0;
+}
+
+p {
+    color: var(--accent2);
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    color: var(--accent);
+    font-family: 'Raleway', sans-serif;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .welcome {
     height: 100vh;
+    width: 100vw;
     background-image: url("welcomeBG.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-attachment: fixed;
 }
 
 .container {
@@ -28,15 +58,119 @@ body {
     border-radius: 20%;
     margin-bottom: 20px;
     border: 5px solid whitesmoke;
+    z-index: 1;
 }
 
 .intro-text {
     margin-left: 20px;
-    width: 200px;
+    width: 250px;
     height: 200px;
     text-align: left;
     font-size: 18px;
-    color: lightgrey;
+    z-index: 1;
+}
+
+.transition1 {
+    width: 100vw;
+    height: 30vh;
+    background-size: 100vw 30vh;
+    background-image: url("transitions/transition1.png");
+}
+
+.transition2{
+    width: 100vw;
+    height: 20vh;
+    background-size: 100vw 20vh;
+    background-image: url("transitions/transition2.png");
+}
+
+.transition3{
+    width: 100vw;
+    height: 20vh;
+    background-size: 100vw 20vh;
+    background-image: url("transitions/transition3.png");
+}
+
+.section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text {
+    padding: 20px;
+    width: 60%;
+    min-width: 200px;
+    flex: 1;
+}
+
+.logos {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .logos {
+      width: 40%;
+      align-items: center;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .logos {
+      width: 100%;
+      align-items: flex-start;
+    }
+}
+
+#socials img {
+    width: 90px;
+    height: 90px;
+    filter: invert(1);
+    margin: 5px;
+}
+
+#skills img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.header {
+    width: 100vw;
+    height: 20px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+}
+
+.project {
+    flex-basis: 45%;
+    min-width: 300px;
+    margin: 10px 0px 10px 20px;
+    height: 300px;
+    border: 3px solid lightgrey;
+    border-radius: 10px;
+}
+
+.project img{
+    width: 100%;
+    height: 60%;
+}
+
+.project div{
+    width: 100%;
+    height: 40%;
+    padding-left: 10px;
 }
 
 

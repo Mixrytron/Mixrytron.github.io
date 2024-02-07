@@ -1,20 +1,79 @@
-<html> 
+<!DOCTYPE html>
+<html lang="en" >
   <head>
-    <title>Aidan's Website</title> 
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <title>Aidan's Website</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-
-  <body> 
+  <body>
+    <div id="particles-js"></div>
     <div class='welcome'>
       <div class='container'>
         <img src="profile.jpeg">
         <div class="intro-text"> 
-          <p>
-            sup my dudes it's ya boi
-            <h1 style="color: white">Aidan Tan</h1>
-            i like to code and stuff
+          <p style='color:whitesmoke'>
+            Hey everyone! My name's 
           </p>
+            <h1>Aidan Tan</h1>
+          <p style='color:whitesmoke'>
+            and I'm a student learning to develop websites
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script><script  src="./script.js"></script>
+    
+    <div class='transition1'></div>
+
+    <div class='section' style='background-color: var(--base);'>
+      <div class='text'>
+        <h1>About Me</h1>
+        <p>
+          Over the course of my high school life, I've built solid foundations in programming. I've picked up JavaScript, Java, and C++, I developed simple apps on Xcode, and I'm learning how to create websites with HTML and CSS.
+        </p>
+      </div>
+
+      <div class='logos' id='socials'>
+        <a href='https://github.com/Mixrytron' target='_blank'><img src='socials/github.png'></img></a>
+        <a target='_blank'><img src='socials/discord.png'></img></a>
+        <a href='https://www.instagram.com/aidansmix/' target='_blank'><img src='socials/instagram.png'></img></a>
+        <a target='_blank'><img src='socials/linkedin.png'></img></a>
+      </div>
+    </div>
+
+    <div class='transition2'></div>
+
+    <div class='section' style='background-color: var(--secondary);'>
+      <div class='text' style='width: 40%'>
+        <h1>Skills</h1>
+        <p>In the following languages, I can code simple scripts, but I've completed competition-level challenges with C++ and Javascript. However, I need time to hone these skills in practical use cases.</p>
+      </div>
+
+      <div class='logos' id='skills' style='width: 60%'>
+        <img src='skills/cplusplus.svg'>
+        <img src='skills/javascript.svg'>
+        <img src='skills/java.svg'>
+        <img src='skills/html.svg'>
+        <img src='skills/css.svg'>
+        <img src='skills/swift.svg'>
+      </div>
+    </div>
+
+    <div class='transition3'></div>
+
+    <div class='section' style='background-color: var(--base); justify-content: flex-start;'>
+      <h1 class='header'>Portfolio</h1>
+
+      <div class='project'>
+        <div>
+          <h2>Project 1</h2>
+          <p>Description</p>
+        </div>
+      </div>
+      <div class='project'>
+        <div>
+          <h2>Project 2</h2>
+          <p>Description</p>
         </div>
       </div>
     </div>
