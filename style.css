@@ -1,188 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Poppins:wght@700&family=Raleway:wght@500&display=swap');
-
-:root {
-    --base: #011826;
-    --secondary: #012840;
-    --accent: #EBF0F2;
-    --accent2: #74838C;
-}
-
 body {
-    background-color: var(--base);
-    margin: 0;
+  background-color: black;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
 }
 
-p {
-    color: var(--accent2);
-    font-family: 'Libre Franklin', sans-serif;
+button:hover {
+  cursor: grab;
 }
 
-h1 {
-    color: white;
-    font-family: 'Poppins', sans-serif;
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  gap: 20px;
 }
 
-h2 {
-    color: var(--accent);
-    font-family: 'Raleway', sans-serif;
+#header button {
+  border: 0px;
+  background-color: transparent;
+  font-size: 15px;
+  color: white ;
 }
 
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  background-color: white;
 }
 
-.welcome {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("welcomeBG.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+#card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85%;
+  width: 60vw;
+  border: 3px solid lightgray;
+  border-radius: 4%;
+  margin: 0px;
+  padding: 10px;
+  gap: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-    padding: 10px;
-    height: 75%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+#search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
 }
 
-.container img {
-    width: 200px;
-    height: 200px;
-    size: contain;
-    border-radius: 20%;
-    margin-bottom: 20px;
-    border: 5px solid whitesmoke;
-    z-index: 1;
+input[type="text"] {
+  font-size: 16px;
+  padding: 10px;
+  width: 60%;
 }
 
-.intro-text {
-    margin-left: 20px;
-    width: 250px;
-    height: 200px;
-    text-align: left;
-    font-size: 18px;
-    z-index: 1;
+#search button {
+  height: 40px;
+  font-size: 24px;
 }
 
-.transition1 {
-    width: 100vw;
-    height: 30vh;
-    background-size: 100vw 30vh;
-    background-image: url("transitions/transition1.png");
+#wishlistTitle {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
 }
 
-.transition2{
-    width: 100vw;
-    height: 20vh;
-    background-size: 100vw 20vh;
-    background-image: url("transitions/transition2.png");
+#refreshButton {
+  width: 10%;
+  font-size: 24px;
 }
 
-.transition3{
-    width: 100vw;
-    height: 20vh;
-    background-size: 100vw 20vh;
-    background-image: url("transitions/transition3.png");
+#dealsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 1;
+  width: 90%; 
+  overflow-y: auto; 
 }
 
-.section {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 100vw;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+.game-deal {
+  display: flex;
+  height: 80px;
+  width: 100%; 
+  margin-top: 5px;
+  background-color: #f0f0f0;
 }
 
-.text {
-    padding: 20px;
-    width: 60%;
-    min-width: 200px;
-    flex: 1;
+.game-deal a {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 90%; 
+  margin: 0px;
+  font-size: 12px;
 }
 
-.logos {
-    width: 40%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+.thumb {
+  width: 25%;
+  height: 100%;
 }
 
-@media screen and (min-width: 600px) {
-    .logos {
-      width: 40%;
-      align-items: center;
-    }
+.title {
+  width: 60%;
 }
+
+.price {
+  width: 10%;
+}
+
+.game-deal button {
+  flex: 0 1 10%;
+  font-size: 20px;
+  color: white;
+  margin: 10px;
+}
+
   
-@media screen and (max-width: 600px) {
-    .logos {
-      width: 100%;
-      align-items: flex-start;
-    }
-}
-
-#socials img {
-    width: 90px;
-    height: 90px;
-    filter: invert(1);
-    margin: 5px;
-}
-
-#skills img {
-    width: 60px;
-    height: 60px;
-    margin: 10px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10%;
-}
-
-.header {
-    width: 100vw;
-    height: 20px;
-    margin-left: 20px;
-    margin-bottom: 60px;
-}
-
-.project {
-    flex-basis: 45%;
-    min-width: 300px;
-    margin: 10px 0px 10px 20px;
-    height: 300px;
-    border: 3px solid lightgrey;
-    border-radius: 10px;
-}
-
-.project div{
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.project h2{
-    font-size: 18px;
-    padding-left: 10px;
-}
-
-.project p{
-    font-size: 14px;
-    padding-left: 10px;
-}
-
-
-
-
-
-
-
